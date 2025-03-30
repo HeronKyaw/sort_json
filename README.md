@@ -1,12 +1,24 @@
-# sort_json
+# **Sort JSON - A Dart CLI Tool for Sorting JSON Files**  
 
-A Dart CLI tool for sorting JSON files alphabetically while prioritizing specific keys.
+### **Overview**  
+Sort JSON is a simple yet powerful Dart package that helps developers organize and maintain localization JSON files by sorting keys alphabetically while keeping prioritized keys at the top. It ensures consistency across multiple language files, making it easier to manage translations in Flutter and other projects.  
 
-## Features
+### **Why Use Sort JSON?**  
+When working with localization files across different languages, maintaining consistency can be challenging. Contributions from multiple developers often lead to disorganized JSON keys, making it difficult to spot duplicates or inconsistencies. This tool helps solve that problem by:  
+- Structuring JSON files for better readability.  
+- Preventing duplicate values with different keys.  
+- Keeping prioritized keys at the top for better organization.  
 
-- Sorts JSON keys in ascending order.
-- Supports prioritized keys that should appear first.
-- Reads prioritized keys from a JSON file specified in `pubspec.yaml`.
+### **Features**  
+✅ **Alphabetically sorts JSON keys** for better structure.  
+✅ **Prioritizes specific keys** (defined in a configuration file).  
+✅ **Prevents duplicate or inconsistent key usage**.  
+✅ **Works as a CLI tool** – simple and easy to use within Flutter projects.  
+
+## **Get Started**  
+Check out the full documentation and source code:  
+🔗 [GitHub Repository](https://github.com/HeronKyaw/sort_json)  
+🔗 [Pub.dev Package](https://pub.dev/packages/sort_json)  
 
 ## Installation
 
@@ -112,3 +124,7 @@ void main() async {
 ## License
 
 This package is licensed under the MIT License.
+
+---
+
+Let me know if you want any modifications! 🚀
