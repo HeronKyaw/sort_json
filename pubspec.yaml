@@ -1,13 +1,13 @@
 name: sort_json
 description: A starting point for Dart libraries or applications.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
-
-environment:
-  sdk: ^3.7.0
+repository: https://github.com/HeronKyaw/sort_json
 
 executables:
-  sort_json: bin/sort_json.dart
+  sort_json: sort_json
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
 
 dependencies:
   yaml: ^3.1.3
