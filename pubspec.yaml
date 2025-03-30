@@ -1,5 +1,5 @@
 name: sort_json
-description: A starting point for Dart libraries or applications.
+description: A tool to sort JSON files alphabetically while prioritizing specific keys.
 version: 1.0.0
 repository: https://github.com/HeronKyaw/sort_json
 license: MIT
