@@ -30,7 +30,8 @@ Future<void> main(List<String> arguments) async {
   try {
     final jsonContent = await jsonFile.readAsString();
     final decodedJson = jsonDecode(jsonContent);
-    final sortedJson = JsonSorter.sortJson(decodedJson, prioritized: prioritizedKeys);
+    final sortedJson =
+        JsonSorter.sortJson(decodedJson, prioritized: prioritizedKeys);
 
     // Format the sorted JSON with indentation.
     final encoder = JsonEncoder.withIndent('  ');
@@ -53,7 +54,8 @@ Future<String> getPrioritizedKeysFilePath() async {
     final config = await configLoader.load();
     if (config is Map && config.containsKey('sort_json')) {
       final sortJsonConfig = config['sort_json'];
-      if (sortJsonConfig is Map && sortJsonConfig.containsKey('prioritized_keys')) {
+      if (sortJsonConfig is Map &&
+          sortJsonConfig.containsKey('prioritized_keys')) {
         final filePath = sortJsonConfig['prioritized_keys'];
         if (filePath is String && filePath.isNotEmpty) {
           return filePath;

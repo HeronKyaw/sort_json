@@ -26,10 +26,12 @@ class JsonSorter {
   /// If the input is a [Map], the keys are sorted using [keyComparator].
   /// If it is a [List], each element is recursively processed.
   /// For other data types, the value is returned unchanged.
-  static dynamic sortJson(dynamic input, {List<String> prioritized = const []}) {
+  static dynamic sortJson(dynamic input,
+      {List<String> prioritized = const []}) {
     if (input is Map) {
       final sortedMap = Map.fromEntries(
-        input.entries.toList()..sort((a, b) => keyComparator(a.key, b.key, prioritized)),
+        input.entries.toList()
+          ..sort((a, b) => keyComparator(a.key, b.key, prioritized)),
       );
 
       // Recursively sort nested objects.
@@ -38,7 +40,9 @@ class JsonSorter {
       });
       return sortedMap;
     } else if (input is List) {
-      return input.map((element) => sortJson(element, prioritized: prioritized)).toList();
+      return input
+          .map((element) => sortJson(element, prioritized: prioritized))
+          .toList();
     } else {
       return input;
     }

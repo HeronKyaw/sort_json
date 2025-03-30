@@ -22,7 +22,8 @@ void main() {
       final loader = ConfigLoader('non_existent.json');
       final result = await loader.load();
 
-      expect(result, equals([])); // Expect an empty list instead of an exception.
+      expect(
+          result, equals([])); // Expect an empty list instead of an exception.
     });
 
     test('Handles invalid JSON format gracefully', () async {
@@ -32,7 +33,8 @@ void main() {
       final loader = ConfigLoader('invalid.json');
       final result = await loader.load();
 
-      expect(result, equals([])); // Expect an empty list instead of throwing an exception.
+      expect(result,
+          equals([])); // Expect an empty list instead of throwing an exception.
 
       await tempFile.delete();
     });
