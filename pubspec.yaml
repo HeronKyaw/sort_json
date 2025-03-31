@@ -1,6 +1,6 @@
 name: sort_json
 description: A tool to sort JSON files alphabetically while prioritizing specific keys.
-version: 1.0.1
+version: 1.0.2
 repository: https://github.com/HeronKyaw/sort_json
 license: MIT
 executables:
